@@ -32,7 +32,7 @@ a:active {
 {
 	width: 50%;
 	padding: 15px;
-	background-color: #212121;
+	background-image: url("orderform.png");
 
 }
 
@@ -41,39 +41,21 @@ a:active {
 
 <body bgcolor="black">
 
-<form action="mailto:o3howd1oXx@hotmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+<form action="contactform.php" method="POST" enctype="multipart/form-data" name="EmailForm">
 
 
 
 <center>
 <div class="div">
-	<p>
-Your Name:
-</p>
-
-<input type="text" size="25" name="ContactName">
+<input type="text" name="name" placeholder="Full Name">
 <br>
-<p>Full Name:</p>
-<textarea name="ContactComment" rows="1" cols="10">
-
-</textarea>
+<input type="text" name="address" placeholder="Street Address">
 <br>
-<p>Street Address:</p>
-<textarea name="ContactComment" rows="2" cols="10">
-
-</textarea>
+<input type="text" name="code" placeholder="Post Code">
 <br>
-<p>Post Code:</p>
-<textarea name="ContactComment" rows="1" cols="10">
-
-</textarea>
+<input type="text" name="country" placeholder="Country">
 <br>
-<p>Country:</p>
-<textarea name="ContactComment" rows="1" cols="10">
-
-</textarea>
-<br>
-
+<button type="submit" name="submit">ORDER NOW</button>
 
 <input type="submit" value="Submit"> </form>
 </center>
