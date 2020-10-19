@@ -32,7 +32,7 @@ a:active {
 {
 	width: 50%;
 	padding: 15px;
-	background-color: #212121;
+	background-image: url("orderform.png");
 
 }
 
@@ -42,8 +42,7 @@ a:active {
 </head>	
 </head>
 
-<body>
-<h1>Contact us</h1>
+<body bgcolor="black">
 <form method="POST" name="contactform" action="contact-form-handler.php"> 
 <center>
 <div class="div">
@@ -75,6 +74,18 @@ Your Name:
 <br>
 
 
+<input type="submit" value="Submit"> </form>
+</center>
+
+<script language="JavaScript">
+
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+</body>
+</html>
 <input type="submit" value="Submit"> </form>
 </center>
 
