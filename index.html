@@ -24,7 +24,7 @@
           color: #fff;
           padding: 20px;
           margin-left: 10%; 
-          font-size: 15px;
+          font-size: 25px;
         }
 a {
   font-family: 'Roboto Mono', monospace;
@@ -52,20 +52,38 @@ a {
   </head>
   <body style="background-color:black;">
     <center>
-<img src="lvgg-link.png" width="20%">
-     <br>
-</center>    
-    <center>
-<img src="unders-construcction.gif" width="40%">
-</center>
-    <center>
-    <div id="unityContainer" style="width: 100%; height: 100%;"></div>
-    </center>
-<p>-liveonlove.life virtual gallery under contstruction</p>
-    <p>-enjoy this preview provided by <a href="https://twitter.com/gttthk">d1ooMe</a> and <a href="https://twitter.com/myself_fan_acc">Otto</a></p>
-<br>
-<center>
-<img src="unders-construcction.gif" width="40%">
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 10, 2021 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "LIVE NOW";
+  }
+}, 1000);
+</script>
 </center>
 
 
