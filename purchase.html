@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>purchase</title>
+	<title>DAY TEST</title>
 	<meta charset="utf-8">
 	<style type="text/css">
 		p
@@ -35,28 +35,14 @@ a:active {
 	background-image: url("orderform.png");
 
 }
+	
 
 	</style>
-
+ <script>
+      UnityLoader.instantiate("unityContainer", "Build/gallery-day.json");
+    </script>
 
 <body bgcolor="black">
-
-<form action="contactform.php" method="POST" enctype="multipart/form-data" name="EmailForm">
-
-
-
-<center>
-<div class="div">
-<input type="text" name="name" placeholder="Full Name">
-<br>
-<input type="text" name="address" placeholder="Street Address">
-<br>
-<input type="text" name="code" placeholder="Post Code">
-<br>
-<input type="text" name="country" placeholder="Country">
-<br>
-<button type="submit" name="submit">ORDER NOW</button>
-</center>
-</div>
+<div id="unityContainer" style="width: 1250px; height: 750px; margin: auto">
 </body>
 </html>
