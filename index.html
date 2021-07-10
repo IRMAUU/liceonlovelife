@@ -1,96 +1,66 @@
-
-<!DOCTYPE html>
-<html lang="en-us">
-  <link rel="icon" 
-      type="image/png" 
-      href="lvgglink.png">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>liveonlovelife</title>
-        <meta property="og:title" content="LVGG Virtual Gallery"/>
-    <meta property="twitter:title" content="LVGG Virtual Gallery"/>
-<meta property="og:image" content="gallery2.png"/>
-<meta property="twitter:image" content="gallery2.png"/>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/gallery.json");
-    </script>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
-
-      body {
-        background-image: url('mazbg.png');
-        background-repeat: no-repeat;}
-
-        p {
-          font-family:'Roboto Mono', monospace;
-          color: #fff;
-          padding: 20px;
-          margin-left: 10%; 
-          font-size: 25px;
-        }
-a {
-  font-family: 'Roboto Mono', monospace;
-  text-decoration: underline;
-  font-size: 15px;
- }
- a:link {
-  color: #fff
- }
- a:hover,
- a:visited {
-    color: #fff; 
-    font-weight:bold;
- }
-
- a:hover {
-  font-weight: bolder;
- }
-
- a:active {
-    color: #fff
- }
-
-    </style>
-  </head>
-  <body style="background-color:black;">
-    <center>
-      <p>Update</p>
-<p id="demo"></p>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jul 10, 2021 12:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "LIVE NOW";
+<html><head>
+<title>LVGG Virtual Gallery</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<meta property="og:title" content="⋆✩⭑3h0w Store⭑✩⋆"/>
+<meta property="twitter:title" content="⋆✩⭑3h0w Store⭑✩⋆"/>
+<meta property="og:image" content="store.png"/>
+<meta property="twitter:image" content="store.png"/>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+img { max-width: 100%; height: auto; }
+p
+		{
+font-size: 8px;
+font-family: 'Roboto Mono', monospace;
+color: white;
+		}
+@media only screen and (min-width: 981px){
+#test{
+display: none;
+      }
+    }
+@media only screen and (max-width: 1000px) {
+#hide {
+display: none;
   }
-}, 1000);
+}
+a:link {
+color: white;
+}
+/* visited link */
+a:visited {
+color: red;
+}
+/* mouse over link */
+a:hover {
+font-weight: bolder;
+}
+/* selected link */
+a:active {
+color: white;
+}
+.green {
+color: #84ff00;
+}
+span,
+.red {
+color: red;
+}
+</style>
+<script src="UnityLoader.js"></script>
+<script>
+UnityLoader.compatibilityCheck=function(e,t,r){t();};
+UnityLoader.instantiate("unityContainer", "gallery.json");
+UnityLoader.instantiate("unityContainer2", "gallery[m].json");
 </script>
-</center>
-
-
-
-  </body>
-</html>
+</head>
+<body bgcolor="black">
+<video width="0" height="0">
+<source src="goal-screen.mp4" type="video/mp4">
+</video>
+<div id="hide">
+<center><div id="unityContainer" style="width: 1250px; height: 750px; margin: auto"></div></div></center>
+<div id="test"><center> <div id="unityContainer2" style="width: 425px; height: 650px; margin: auto"></div><br>
+<p>dev <a href="https://www.instagram.com/gtthk">&#64;gtthk</a></p></center></div>
+</body></html>
