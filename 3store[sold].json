@@ -1,0 +1,17 @@
+{
+"companyName": "3h0w",
+"productName": "3h0w Store",
+"productVersion": "1.0",
+"dataUrl": "3store[sold].data.unityweb",
+"wasmCodeUrl": "3store[sold].wasm.code.unityweb",
+"wasmFrameworkUrl": "3store[sold].wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "3store[sold].jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.2f1"
+}
